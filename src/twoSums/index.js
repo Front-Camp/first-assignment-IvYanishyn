@@ -9,7 +9,19 @@
  * twoSums([5, 9, 3], 12); // [9, 3]
  */
 const twoSums = (arr, base) => {
-  /* your logic here...*/
+  function twoSums(arr, base) {
+  	var arrayLength = arr.length;
+	for (var i = 0; i < arrayLength; i++) {
+		if(isNan(arr[i] !== false)){
+			if (i+1 != arrayLength){
+				var sum = arr[i] + arr[i+1]
+				if (sum == base) {
+					return base;
+				}
+			}
+		}
+	}
+  }
 };
 
 export default twoSums;

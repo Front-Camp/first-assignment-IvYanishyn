@@ -7,7 +7,15 @@
 * max([-1, 0]);   // 0
 */
 const max = arr => {
-  /* your logic here...*/
+  function max(arr) {
+	  var arrayLength = arr.length;
+	  for (var i = 0; i < arrayLength; i++) {
+	  	if(isNan(arr[i]) || isFinite(arr[i]){
+	  		throw 'Error';
+	 	 }
+	  }
+	  return Math.max.apply(Math, arr);
+  }
 };
 
 export default max;
